@@ -8,7 +8,7 @@ gulp.task('clean', function () {
 });
 
 gulp.task('build', function () {
-   return gulp.src('src/app.js')
+   return gulp.src('src/**/**/*.js')
        .pipe(babel())
        .pipe(gulp.dest('build/'))
 });
